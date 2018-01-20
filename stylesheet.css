@@ -1,0 +1,47 @@
+/* <!–– the h1 code changes the font, gives it a gradient and an animation that changes from one gradient to another --> */
+
+h1{
+ font-family: 'Risque';
+ background: linear-gradient(to top right, red, purple);
+ animation-name: colorchange2;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+ 
+ 
+}
+/* The code below affects the body by changing the background poisition of the images, and changing the font family of the body, and the skew commands transforms the the h1 and images by adding edges to it  */
+body{
+  background-attachment: fixed;
+  background-position: center;  
+  font-family: 'Berkshire Swash';
+ transform:skewX(-10deg);
+}
+
+ 
+ 
+  
+
+/*This the code of the tabs on top gives the tabs a box shadow, gradient, padding and margin, and an animation that continues forever */
+.toparea{
+    font-family: 'Risque';
+     box-shadow: 15px 15px 10px grey;
+     background: linear-gradient(to top right, red, purple);
+     padding: 20px 20px 20px 20px;
+     margin: -23px -0px 10px 0px;
+     transform:rotateY(20deg);
+     animation-name: colorchange;
+     animation-duration: 4s;
+     animation-iteration-count:infinite;
+     
+}
+/* Below the codes are for the animations i used in this project.*/
+@keyframes colorchange  {
+    from {background: linear-gradient(to bottom left, red, purple);}
+    to {background: linear-gradient(to bottom left, blue, white);}
+}
+@keyframes colorchange2  {
+    from {background: linear-gradient(to bottom left, red, purple);}
+    to {background: linear-gradient(to bottom left, blue, white);}
+}
+
+
